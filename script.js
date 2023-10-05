@@ -1,25 +1,33 @@
-// Lógica de Programação
-// Problema: receber 3 notas de um aluno, 
-// calcular e apresentar a média e o resultado
-// se o aluno foi aprovado ou não.
+function mediaAluno() {
 
-console.log ('Início do programa');
+    // Lógica de Programação
+    // Problema: receber 3 notas de um aluno, 
+    // calcular e apresentar a média e o resultado
+    // se o aluno foi aprovado, reprovado ou ficou de exame.
 
-let nota1;
-let nota2;
-let nota3;
+    console.log ('Inicio do programa');
 
-nota1 = parseInt(prompt('Digite a nota 1:'));
-nota2 = parseInt(prompt('Digite a nota 2:'));
-nota3 = parseInt(prompt('Digite a nota 3:'));
+    // declaração das "variáveis"
+    const nota1 = parseInt (document.getElementById ('nota1').value);
+    const nota2 = parseInt (document.getElementById ('nota2').value);
+    const nota3 = parseInt (document.getElementById ('nota3').value);
+    
+    // calculo da media
+    const media = (nota1 + nota2 + nota3) / 3;
+
+    document.getElementById('resultado').innerHTML = 'a media do aluno é:' + media +
+    '<br>';
 
 
+    if (media >= 7) {
+        document.getElementById('resultado').innerHTML += 'APROVADO';
+    } else if (media >=5) {
+        document.getElementById('resultado').innerHTML += 'EXAME';
+    }else {
+        document.getElementById('resultado').innerHTML += 'REPROVADO';
+    }
 
-// calculo da média
-media = (nota1 + nota2 + nota3) / 3;
+    console.log ('Fim do programa');
+}
 
-console.log ('A nota1 do aluno é:', nota1);
-console.log ('A nota2 do aluno é:', nota2);
-console.log ('A nota3 do aluno é:', nota3);
-console.log ('A média do aluno é:', media);
-console.log ('Fim do programa');
+mediaAluno()

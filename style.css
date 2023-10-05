@@ -1,0 +1,40 @@
+:root{
+    --cor-primaria: #5C8374; 
+    --cor-secundaria: #183D3D;
+    --cor-terciaria: #93B1A6;
+    --fonte-primária: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+margin: 10px 20px;
+}
+
+.titulo-pagina {
+    color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+p {
+    font-family: var(--fonte-primária);
+    display: flex;
+    justify-content: center;
+}
+
+.controle-formulario {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    border-radius: 5px solid #000;
+    
+}
+
+
