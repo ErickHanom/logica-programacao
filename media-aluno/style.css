@@ -11,29 +11,33 @@ margin: 10px 20px;
 
 .titulo-pagina {
     color: var(--cor-primaria);
-    display: flex;
-    justify-content: center;
+    
     padding: 5px;
 }
 
 p {
     font-family: var(--fonte-primária);
-    display: flex;
-    justify-content: center;
+   
 }
 
 .controle-formulario {
-    display: flex;
-    justify-content: center;
+   display: flex;
+}
+
+form {
+    border: #000;
+    border-radius: 5px solid #000;
 }
 
 button{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 article {
-    border-radius: 5px solid #000;
+    background-color: var(--cor-terciaria);
+    border: 5px solid #000;
     
 }
 
